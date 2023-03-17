@@ -2,15 +2,15 @@ class HOSxP {
     getUserLogin(user, pwd) {
         let sql = `SELECT * FROM opduser 
                 WHERE loginname = '${user}'
-                AND (passweb = UPPER(MD5('${pwd}')) OR passweb = LOWER(MD5('${pwd}')))
-                AND groupname IN('X-RAY', 'ผู้ดูแลระบบ')`
+                    AND (passweb = UPPER(MD5('${pwd}')) OR passweb = LOWER(MD5('${pwd}')))
+                    AND groupname IN('X-RAY', 'ผู้ดูแลระบบ')`
         return sql;
     }
 
     getUserLoginAll(user, pwd) {
         let sql = `SELECT * FROM opduser 
                 WHERE loginname = '${user}'
-                AND (passweb = UPPER(MD5('${pwd}')) OR passweb = LOWER(MD5('${pwd}')))`
+                    AND (passweb = UPPER(MD5('${pwd}')) OR passweb = LOWER(MD5('${pwd}')))`
         return sql;
     }
 

@@ -22,6 +22,7 @@ const config = {
         connectionLimit: 10,
     },
     secretKey: process.env.REH_XRAY_SECRET_KEY,
+    prefix: "/api/v1"
 }
 
 exports.config = config;

@@ -8,6 +8,16 @@ services:
       context: ./
     environment:
       - NODE_ENV=production
+      - REH_XRAY_SERVER_PORT=PORT
+      - REH_XRAY_SECRET_KEY=KEY
+      - REH_XRAY_DB_HOST=HOST
+      - REH_XRAY_DB_USER=USER
+      - REH_XRAY_DB_PASS=PASS
+      - REH_XRAY_DB_NAME=NAME
+      - REH_XRAY_DB_HOST_HOS=HOST_HOS
+      - REH_XRAY_DB_USER_HOS=USER_HOS
+      - REH_XRAY_DB_PASS_HOS=PASS_HOS
+      - REH_XRAY_DB_NAME_HOS=NAME_HOS
     ports:
       - 8080:8080
     restart: always
