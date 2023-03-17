@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  rehXrayApi:
+    image: sgdevz/service-referin-out
+    stdin_open: true
+    build:
+      dockerfile: ./Dockerfile
+      context: ./
+    environment:
+      - NODE_ENV=production
+    ports:
+      - 8080:8080
+    restart: always
+

@@ -1,0 +1,10 @@
+{
+    "name": "service-referin-out",
+    "script": "/usr/src/app/server.js",
+    "instances": "1",
+    "env": {
+        "TZ": "Asia/Bangkok"
+    },
+    "log_date_format": "YYYY-MM-DD HH:mm Z",
+    "autorestart": true
+}
